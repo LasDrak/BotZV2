@@ -195,11 +195,10 @@ for (let filename of fs.readdirSync(pluginFolder).filter(pluginFilter)) {
 }
 
 conn.connect().then(() => {
- conn.sendMessage('3197010258237@c.us', '「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!!_', 'conversation');
+ conn.sendMessage('6285756507257@c.us', '「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!!_', 'conversation');
     fs.writeFileSync(authFile, JSON.stringify(conn.base64EncodedAuthInfo(), null, '\t'))
     global.timestamp.connect = new Date
   })
-}
 
 // console.log(Object.keys(global.plugins))
 global.reload = (_event, filename) => {
