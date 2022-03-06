@@ -160,6 +160,8 @@ handler.tags = ['info']
 handler.command = /^(menu2|menu|command)$/i
 module.exports = handler
 
+handler.register = true
+
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
